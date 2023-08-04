@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Barra de Links</title>
+    <title>Barra de Links e Exemplo de CV</title>
     <style>
+        /* Estilos da barra de links (mantido o mesmo) */
         body {
             margin: 0;
             padding: 0;
@@ -20,6 +21,30 @@
             text-decoration: none;
             margin: 0 10px;
         }
+
+        /* Estilos do currículo */
+        .cv-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            font-family: Arial, sans-serif;
+        }
+
+        .cv-heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .cv-item {
+            margin-bottom: 10px;
+        }
+
+        .cv-item strong {
+            display: inline-block;
+            width: 120px;
+        }
     </style>
 </head>
 <body>
@@ -27,6 +52,37 @@
         <a href="https://www.google.com" target="_blank">Google</a>
         <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
         <a href="https://mail.google.com" target="_blank">Gmail</a>
+    </div>
+
+    <div class="cv-container">
+        <h2 class="cv-heading">Exemplo de Currículo</h2>
+        <div class="cv-item">
+            <strong>Nome:</strong> John Doe
+        </div>
+        <div class="cv-item">
+            <strong>Email:</strong> john.doe@example.com
+        </div>
+        <div class="cv-item">
+            <strong>Telefone:</strong> (11) 98765-4321
+        </div>
+        <div class="cv-item">
+            <strong>Formação:</strong> Bacharelado em Engenharia de Software, Universidade XYZ, 2010-2014
+        </div>
+        <div class="cv-item">
+            <strong>Experiência Profissional:</strong>
+            <ul>
+                <li>Desenvolvedor Web, Empresa ABC, 2015-2019</li>
+                <li>Analista de Sistemas, Empresa XYZ, 2019-2022</li>
+            </ul>
+        </div>
+        <div class="cv-item">
+            <strong>Habilidades:</strong>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python, Java</li>
+                <li>Git, SQL</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
